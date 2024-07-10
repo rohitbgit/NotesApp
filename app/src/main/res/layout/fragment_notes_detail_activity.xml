@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".NotesDetailActivity">
+
+    <TextView
+        android:id="@+id/headingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_note"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/updateSaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check_icon"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/headingTv"
+        android:layout_marginEnd="6dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/updateTitleEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/note_title"
+        android:textSize="20sp"
+        android:layout_below="@id/headingTv"
+        android:background="@drawable/background_design"
+        android:padding="12dp"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/updateDescEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/enter_the_content_here"
+        android:textSize="18sp"
+        android:layout_below="@id/updateTitleEt"
+        android:background = "@drawable/background_design"
+        android:padding="10dp"
+        android:gravity="top"
+        android:layout_marginTop="12dp"
+        />
+
+</RelativeLayout>

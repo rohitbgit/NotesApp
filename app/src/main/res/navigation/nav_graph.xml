@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreen">
+
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.example.notesapp.LoginScreen"
+        android:label="fragment_login_screen"
+        tools:layout="@layout/fragment_login_screen" >
+        <action
+            android:id="@+id/action_loginScreen_to_notesScreen"
+            app:destination="@id/notesScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteScreen"
+        android:name="com.example.notesapp.AddNoteScreen"
+        android:label="fragment_add_note_screen"
+        tools:layout="@layout/fragment_add_note_screen" >
+        <action
+            android:id="@+id/action_addNoteScreen_to_notesScreen"
+            app:destination="@id/notesScreen"
+            app:popUpTo="@id/notesScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesScreen"
+        android:name="com.example.notesapp.NotesScreen"
+        android:label="fragment_notes_screen"
+        tools:layout="@layout/fragment_notes_screen" >
+        <action
+            android:id="@+id/action_notesScreen_to_notesDetailActivity"
+            app:destination="@id/notesDetailActivity" />
+        <action
+            android:id="@+id/action_notesScreen_to_addNoteScreen"
+            app:destination="@id/addNoteScreen" />
+        <action android:id="@+id/action_notesScreen_to_loginScreen"
+            app:destination="@id/loginScreen"
+            app:popUpTo="@id/notesScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesDetailActivity"
+        android:name="com.example.notesapp.NotesDetailActivity"
+        android:label="fragment_notes_detail_activity"
+        tools:layout="@layout/fragment_notes_detail_activity">
+
+        <argument android:name="noteId"
+            app:argType="integer"
+            android:defaultValue="-1"/>
+        <action
+            android:id="@+id/action_notesDetailActivity_to_notesScreen"
+            app:destination="@id/notesScreen"
+            app:popUpTo="@id/notesScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

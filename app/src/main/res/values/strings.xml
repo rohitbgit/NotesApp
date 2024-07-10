@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NotesApp</string>
+    <string name="add_task">ADD TASK</string>
+    <string name="name_show_taskname">Name : Show TaskName</string>
+    <string name="description_show_description">Description : Show Description</string>
+    <string name="edit">EDIT</string>
+    <string name="description">Description</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="name">Name</string>
+    <string name="task_details">TASK DETAILS:</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_notes_app">Welcome to Notes App</string>
+    <string name="web_client_id">330767408016-96alti0hbt5kkpba9g8k166ceg0p3j9s.apps.googleusercontent.com</string>
+    <string name="notes_app">Notes App</string>
+    <string name="note_title">Note Title</string>
+    <string name="enter_the_content_here">Enter the content here...</string>
+    <string name="update_note">Update Note</string>
+
+</resources>
